@@ -21,8 +21,6 @@ public class LoginController {
 	public String login(@RequestParam(value="error", required=false) String error,
 			@RequestParam(value="logout", required = false) String logout,
 			Model model, Principal principal, RedirectAttributes flash, Locale locale) {
-		
-		
 		if(principal != null) {
 			flash.addFlashAttribute("info", messageSource.getMessage("text.login.already", null, locale));
 			return "redirect:/login";
@@ -38,12 +36,5 @@ public class LoginController {
 		
 		return "login";
 	}
-
-
-	/*@GetMapping("/home")
-	public String home(		
-			Model model, Principal principal) {
-		return "home";
-	}*/
-	
+		
 }
