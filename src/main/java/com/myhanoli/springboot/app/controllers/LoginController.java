@@ -38,4 +38,12 @@ public class LoginController {
 		
 		return "login";
 	}
+
+
+	/*@GetMapping("/home")
+	public String home(		
+			Model model, Principal principal) {
+		return "home";
+	}*/
+	
 }
