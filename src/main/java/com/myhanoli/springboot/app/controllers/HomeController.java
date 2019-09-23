@@ -23,7 +23,7 @@ public class HomeController {
     private MessageSource messageSource;
 
 	
-	@GetMapping("/home")
+	@GetMapping(value = {"/home","/"})
 	public String home(		
 			Model model, Principal principal) {
 		return "home";
