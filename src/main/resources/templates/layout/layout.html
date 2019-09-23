@@ -27,8 +27,8 @@
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" th:href="@{/home}" th:text="#{text.menu.home}">Home</a></li>
-					<li class="nav-item"><a class="nav-link" th:href="@{/}" th:text="#{text.menu.customer}">Customer</a></li>
-					<li class="nav-item"><a class="nav-link" th:href="@{/cuenta}" th:text="#{text.menu.accounts}">Accounts</a></li>
+					<li class="nav-item active"><a class="nav-link" th:href="@{/listar}" th:text="#{text.menu.customer}">Customer</a></li>
+					<li class="nav-item active"><a class="nav-link" th:href="@{/cuenta}" th:text="#{text.menu.accounts}">Accounts</a></li>
 				</ul>
 				<ul class="navbar-nav navbar-right">
 					<li sec:authorize="!isAuthenticated()"><a
