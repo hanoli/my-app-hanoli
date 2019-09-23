@@ -22,8 +22,7 @@ public class Gasto implements Serializable {
 	@NotEmpty
 	private String nombre;
 	
-	@NotEmpty
-	private String monto;
+	private Integer monto;
 
 	public Long getId() {
 		return id;
@@ -33,8 +32,6 @@ public class Gasto implements Serializable {
 		this.id = id;
 	}
 
-
-
 	public String getNombre() {
 		return nombre;
 	}
@@ -43,13 +40,17 @@ public class Gasto implements Serializable {
 		this.nombre = nombre;
 	}
 
-	public String getMonto() {
+	public Integer getMonto() {
 		return monto;
 	}
 
-	public void setMonto(String monto) {
+	public void setMonto(Integer monto) {
 		this.monto = monto;
 	}
+
+
+
+
 
 	
 
