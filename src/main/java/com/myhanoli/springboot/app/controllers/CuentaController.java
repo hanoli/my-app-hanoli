@@ -1,7 +1,5 @@
 package com.myhanoli.springboot.app.controllers;
 
-import java.io.IOException;
-import java.security.Principal;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -18,9 +16,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -30,12 +25,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.support.SessionStatus;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import com.myhanoli.springboot.app.models.entity.Cliente;
 import com.myhanoli.springboot.app.models.entity.Gasto;
-import com.myhanoli.springboot.app.models.service.IClienteService;
 import com.myhanoli.springboot.app.models.service.IGastoService;
 import com.myhanoli.springboot.app.util.paginator.PageRender;
 

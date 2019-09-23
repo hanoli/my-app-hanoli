@@ -7,15 +7,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.myhanoli.springboot.app.models.dao.IClienteDao;
-import com.myhanoli.springboot.app.models.dao.IFacturaDao;
 import com.myhanoli.springboot.app.models.dao.IGastoDao;
-import com.myhanoli.springboot.app.models.dao.IProductoDao;
-import com.myhanoli.springboot.app.models.entity.Cliente;
-import com.myhanoli.springboot.app.models.entity.Factura;
 import com.myhanoli.springboot.app.models.entity.Gasto;
-import com.myhanoli.springboot.app.models.entity.Producto;
+
 
 @Service
 public class GastoServiceImpl implements IGastoService{

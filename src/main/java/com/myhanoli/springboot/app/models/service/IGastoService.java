@@ -1,14 +1,10 @@
 package com.myhanoli.springboot.app.models.service;
 
 import java.util.List;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.myhanoli.springboot.app.models.entity.Cliente;
-import com.myhanoli.springboot.app.models.entity.Factura;
 import com.myhanoli.springboot.app.models.entity.Gasto;
-import com.myhanoli.springboot.app.models.entity.Producto;
+
 
 public interface IGastoService {
 
