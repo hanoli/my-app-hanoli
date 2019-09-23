@@ -101,7 +101,7 @@ public class ClienteController {
 	}
 	
 	
-	@RequestMapping(value = {"/listar", "/"}, method = RequestMethod.GET)
+	@RequestMapping(value = {"/listar"}, method = RequestMethod.GET)
 	public String listar(@RequestParam(name = "page", defaultValue = "0") int page, Model model,
 			Authentication authentication,
 			HttpServletRequest request,
@@ -142,7 +142,7 @@ public class ClienteController {
 		Page<Cliente> clientes = clienteService.findAll(pageRequest);
 
 		PageRender<Cliente> pageRender = new PageRender<Cliente>("/listar", clientes);
-		model.addAttribute("titulo", messageSource.getMessage("text.cliente.listar.titulo", null, locale));
+		//model.addAttribute("titulo", messageSource.getMessage("text.cliente.listar.titulo", null, locale));
 		model.addAttribute("clientes", clientes);
 		model.addAttribute("page", pageRender);
 		return "listar";
