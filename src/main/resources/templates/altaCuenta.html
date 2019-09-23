@@ -6,7 +6,8 @@
 	<header th:replace="layout/layout :: header"></header>
 
 	<div class="container py-4">
-
+	<a th:href="@{'/cuenta/'}"
+					class="btn btn-light btn-xs" th:utext="#{text.global.volver}">&laquo; volver</a>
 		<div class="card bg-dark text-white">
 			<div class="card-header" th:text="${titulo}"></div>
 			<div class="card-body">
